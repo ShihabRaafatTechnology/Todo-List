@@ -1,0 +1,105 @@
+/*
+Theme Name: Todo List
+Theme URI: None
+Author:
+    - Shihab Raafat ( Front-End Developer )
+Author URI:
+    - none
+Description:
+Version: 1.0
+Text Domain: https://agency.netlify.com
+ */
+
+/*************************************************** Let's Start ******************************************************/
+
+/* Start Main Rulez */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+body{
+    background-image: linear-gradient(120deg, #000, #f00);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+/* End Main Rulez */
+
+/* Start Header */
+header{
+    font-size: 1.5rem;
+}
+/* End Header */
+
+/* Start Form */
+form .todo-input, form .todo-btn{
+    font-size: 2rem;
+    padding: 0.5rem;
+    border: none;
+    background-color: white;
+}
+form .todo-btn{
+    color: #d88771;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+form .todo-btn:hover{
+    background-color: #d88771;
+    color: white;
+}
+/* End Form */
+
+/* Start Header,Form Group */
+header,
+form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* End Header,Form Group */
+
+/* Start ToDoList */
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-list{
+    min-width: 30%;
+    list-style: none;
+}
+.todo{
+    background-color: white;
+    color: black;
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.todo li{flex: 1;}
+.complete-btn,
+.trash-btn
+{
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.complete-btn{background-color: rgba(0,0,0,.7)}
+.trash-btn{background-color: rgba(255,0,0,.8)}
+.fa-trash,
+.fa-check{pointer-events: none}
+.todo-item{padding: 0rem 1rem;}
+.completed{
+    opacity: 0.5;
+    text-decoration:line-through;
+}
+/* End ToDoList */
+
+
